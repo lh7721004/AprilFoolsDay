@@ -162,7 +162,7 @@ export default function App() {
     script.async = true;
     script.onload = () => {
       if (window.Kakao && !window.Kakao.isInitialized()) {
-        window.Kakao.init(import.meta.env.VITE_KAKAO_API_KEY);
+        window.Kakao.init(process.env.VITE_KAKAO_API_KEY);
       }
     };
     document.body.appendChild(script);
