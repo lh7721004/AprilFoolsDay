@@ -158,11 +158,12 @@ export default function App() {
 
   useEffect(() => {
     const script = document.createElement("script");
+    const kakaoApiKey = process.env.NEXT_PUBLIC_KAKAO_API_KEY;
     script.src = "https://developers.kakao.com/sdk/js/kakao.js";
     script.async = true;
     script.onload = () => {
       if (window.Kakao && !window.Kakao.isInitialized()) {
-        window.Kakao.init(process.env.VITE_KAKAO_API_KEY);
+        window.Kakao.init(kakaoApiKey);
       }
     };
     document.body.appendChild(script);
