@@ -227,7 +227,7 @@ export default function App() {
     window.Kakao.Share.sendDefault({
       objectType: "feed",
       content: {
-        title: `내 병맛 MBTI는 ${result.code}!`,
+        title: `내 MBTI는 ${result.code}!`,
         description: result.meanings.join(" / "),
         imageUrl: "https://via.placeholder.com/300x200.png?text=MBTI",
         link: {
