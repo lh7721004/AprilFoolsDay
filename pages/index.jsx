@@ -158,7 +158,7 @@ export default function App() {
 
   useEffect(() => {
     const script = document.createElement("script");
-    const kakaoApiKey = process.env.NEXT_PUBLIC_KAKAO_API_KEY;
+    const kakaoApiKey = "c16c4f61644f1e9aa8563e8bae069ab3";
     script.src = "https://developers.kakao.com/sdk/js/kakao.js";
     script.async = true;
     script.onload = () => {
